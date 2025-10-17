@@ -67,3 +67,5 @@ export async function profile(req, res)
     const user = await User.findById(_req.userId).select('_id name email');
     res.json({user});
 }
+
+
